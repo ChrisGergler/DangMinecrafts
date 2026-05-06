@@ -8,7 +8,7 @@ RUN apk add --no-cache docker-cli docker-cli-compose
 WORKDIR /app
 
 # Copy your docker-compose.yaml into the container
-COPY docker-compose.yaml .
+RUN git clone https://github.com/ChrisGergler/DangMinecrafts.git
 
 # Set the entrypoint to run docker compose
 # Using "up" as the default command
