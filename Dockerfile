@@ -4,6 +4,8 @@ FROM alpine:latest
 # Install Docker CLI and the Compose plugin
 RUN apk add --no-cache docker-cli docker-cli-compose
 
+RUN apk add git
+
 # Create a directory for your project
 WORKDIR /app
 
